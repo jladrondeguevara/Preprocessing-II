@@ -1,25 +1,5 @@
 @import "mixins";
 @import "variables";
-// .home {
-//     .nav-bar {
-//         display: flex;
-//         flex-direction: row;
-//         justify-content: space-between;
-//         // margin: 3rem 0 3rem 0;
-//         .bottom-border-style();
-//         max-width: auto;
-//         nav {
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-between;
-//         }
-//         a {
-//             text-decoration: none;
-//             color: @shark;
-//             font-size: 1.6rem;
-//         }
-//     }
-// }
 
 .nav-bar {
     display: flex;
@@ -29,6 +9,12 @@
     margin-top: 2%;
     .bottom-border-style();
     max-width: auto;
+    @media (@mobile){
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
     nav {
         width: 40%;
         padding-top: 1.3em;
@@ -36,6 +22,14 @@
         flex-direction: row;
         justify-content: space-evenly;
         margin-bottom: 3%;
+        @media (@mobile){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+            width: 100%;
+            padding-bottom: 3%;
+        }
         
     }
     a {
@@ -51,5 +45,18 @@
         display: block;
         margin: auto;
         width: 800px;
+        @media (@mobile){
+            width: 90%;
+        }
     }
+    .welcome-paragraph {
+        width: 800px;
+        margin: auto;
+        padding-top: 1%;
+        @media (@mobile){
+            width: 90%;
+        }
+      }
+      
+    
 }

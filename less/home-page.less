@@ -1,3 +1,4 @@
+
 .home {
 
   .content-section {
@@ -6,7 +7,11 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    .welcome-paragraph {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 2px dashed @navigation-border;
+    }
     
     .text-content {
       width: 48%;
@@ -56,6 +61,11 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+    .btn {
+      width: 83%;
+      .sign-up-button(@bg-color);
+      @bg-color: green;
     }
   }
 }// home

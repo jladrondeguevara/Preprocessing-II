@@ -1,1 +1,18 @@
 // Mixins in here
+@import "variables";
+.bottom-border-style  (){
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-bottom-color: @navigation-border;
+}
+
+.sign-up-button (@bg-color)
+{
+    border-style: solid;
+    border-radius: 15px;
+    background-color: @bg-color;
+    font-size: 20px;
+    text-align: center;
+    padding: 5%;
+    color: @white;
+}

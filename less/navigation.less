@@ -1,1 +1,55 @@
-// Navigation Styles here
+@import "mixins";
+@import "variables";
+// .home {
+//     .nav-bar {
+//         display: flex;
+//         flex-direction: row;
+//         justify-content: space-between;
+//         // margin: 3rem 0 3rem 0;
+//         .bottom-border-style();
+//         max-width: auto;
+//         nav {
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-between;
+//         }
+//         a {
+//             text-decoration: none;
+//             color: @shark;
+//             font-size: 1.6rem;
+//         }
+//     }
+// }
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 19% 0 20%;
+    margin-top: 2%;
+    .bottom-border-style();
+    max-width: auto;
+    nav {
+        width: 40%;
+        padding-top: 1.3em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 3%;
+        
+    }
+    a {
+        text-decoration: none;
+        color: @shark;
+        font-size: 1.6rem;
+    }
+    
+}
+
+.content-navigation {
+    img {
+        display: block;
+        margin: auto;
+        width: 800px;
+    }
+}
